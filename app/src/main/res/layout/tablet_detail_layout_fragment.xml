@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/fragment_exo_simple_player"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/horizontalHalf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:resize_mode="fill" />
+
+    <TextView
+        android:id="@+id/fragment_tv_no_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_video"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/fragment_exo_simple_player"
+        app:layout_constraintLeft_toRightOf="@id/fragment_exo_simple_player"
+        app:layout_constraintRight_toLeftOf="@id/fragment_exo_simple_player"
+        app:layout_constraintTop_toBottomOf="@id/fragment_exo_simple_player" />
+
+    <ProgressBar
+        android:id="@+id/fragment_exo_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/fragment_exo_simple_player"
+        app:layout_constraintLeft_toRightOf="@id/fragment_exo_simple_player"
+        app:layout_constraintRight_toLeftOf="@id/fragment_exo_simple_player"
+        app:layout_constraintTop_toBottomOf="@id/fragment_exo_simple_player" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalHalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <TextView
+        android:id="@+id/fragment_tv_display_activity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/general_padding"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/cardview_tv_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iv_fragment_thumbnail"
+        app:layout_constraintRight_toRightOf="@id/fragment_exo_simple_player"
+        app:layout_constraintTop_toBottomOf="@id/horizontalHalf"
+        tools:text="Step One " />
+
+    <ImageView
+        android:id="@+id/iv_fragment_thumbnail"
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:contentDescription="@string/thumbinal_content"
+        app:layout_constraintLeft_toLeftOf="@id/fragment_exo_simple_player"
+        app:layout_constraintTop_toBottomOf="@id/fragment_exo_simple_player" />
+
+
+</android.support.constraint.ConstraintLayout>

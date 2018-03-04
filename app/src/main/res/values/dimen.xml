@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_padding">5dp</dimen>
+    <dimen name="imageview_card_height">200dp</dimen>
+    <dimen name="cardview_radius">2dp</dimen>
+    <dimen name="cardview_tv_height">40dp</dimen>
+    <dimen name="cardview_tv_text_size">25sp</dimen>
+    <dimen name="margin_top_32">32dp</dimen>
+    <dimen name="margin_top_16">16dp</dimen>
+    <dimen name="margin_left_5">5dp</dimen>
+    <dimen name="txt_size_20">20sp</dimen>
+    <dimen name="thumbnail_size">150dp</dimen>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Recipe</string>
+    <string name="recipe_image_content_description">image of the recipe</string>
+    <string name="thumbinal_content">step thumbinal image</string>
+    <string name="no_internet_connection">Please check your internet connection and try again</string>
+    <string name="btn_ingredients">Ingredients</string>
+    <string name="no_video">No available video for this step</string>
+    <string name="next_button">Next Step</string>
+    <string name="prev_button">Previous Step</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="action_add_widget">Add To Widget</string>
+    <string name="no_added_recipe">No add Recipe to widget</string>
+    <string name="toast_widget">Recipe added to widget</string>
+    <!--This Section for Notifications setup-->
+    <string name="notify_channel_name">Daily</string>
+    <string name="notify_channel_description">This channel will provide user with daily notification</string>
+    <string name="notify_title">My Recipes</string>
+    <string name="notify_body">Have you checked our delicious recipes, Give it a try</string>
+    <!--This Section for Preferences-->
+    <string name="key_last_notify">last_notify</string>
+    <string name="key_first_run">first_run</string>
+
+
+</resources>
